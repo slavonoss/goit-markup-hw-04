@@ -242,9 +242,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-size: content;
+  /* background-size: contain;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   height: 120px;
   width: 270px;
   border-radius: 4px;
@@ -364,12 +364,12 @@ heder-nav:active,
   justify-content: space-around;
 }
 
-.text-element {
+/* .text-element {
   font-family: inherit;
-  font-size: 14 px;
+  font-size: 14px;
   line-height: 1.7;
   color: var(--text-element-color);
-}
+} */
 
 .main-container {
 }
