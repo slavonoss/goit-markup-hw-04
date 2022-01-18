@@ -543,9 +543,7 @@ heder-nav:active,
 }
 .footer-social-link {
   fill: var(--body-background-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  
   display: flex;
   align-items: center;
   justify-content: center;
