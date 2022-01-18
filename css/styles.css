@@ -26,6 +26,7 @@ p {
   --filter-button-color: #f5f4fa;
   --liting-color: #2196f3;
   --background-color-second: #2f303a;
+  --grey-liting: #afb1b8;
 }
 
 body {
@@ -129,7 +130,7 @@ body {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1721;
-
+  align-items: center;
   display: flex;
   
 }
@@ -150,9 +151,9 @@ body {
   color: var(--liting-color);
 }
 .header-feadback-icon {
-  display: block;
+
   margin-right: 10px;
-  
+
 }
 
 /* HERO */
@@ -173,7 +174,7 @@ body {
   padding-bottom: 200px;
   padding-top: 200px;
 
-  box-sizing: border-box;
+  
 }
 .overlay {
 }
@@ -329,9 +330,7 @@ heder-nav:active,
   padding-bottom: 30px;
 }
 .social-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+ 
   margin-right: 10px;
 }
 .social-item:last-child {
@@ -347,7 +346,7 @@ heder-nav:active,
 
   border-radius: 50%;
 }
-.social-item:hover .social-link {
+.social-link:hover, .socia-link:focus{
   fill: var(--body-background-color);
   background-color: #2196f3;
 }
@@ -467,25 +466,26 @@ heder-nav:active,
   justify-content: center;
 }
 .regular-client-item {
-  display: flex;
-  width: 170px;
-  height: 92px;
-  border-radius: 4px;
-  border: 1px solid #afb1b8;
+
 }
 .regular-client-item:not(:last-child) {
   margin-right: 30px;
 }
-.regular-client-item:hover .regular-client-link {
+.regular-client-link:hover, .regular-client-link:focus{
   fill: #2196f3;
-}
-.regular-client-item:hover {
   border: 1px solid #2196f3;
 }
+
 .regular-client-link {
- 
+  display: flex;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  border: 1px solid var(--grey-liting);
+  align-items: center;
+  justify-content: center;
   padding: 16px 32px;
-  fill: #afb1b8;
+  fill: var(--grey-liting);
 }
 
 .footer {
@@ -551,13 +551,14 @@ heder-nav:active,
   justify-content: center;
   height: 44px;
   width: 44px;
-  
+  border-radius: 50%;
+  background-color: #44454e;
 }
 .footer-social-item {
   
-  background-color: #44454e;
+ 
   margin-right: 10px;
-  border-radius: 50%;
+ 
 }
 .footer-social-item:last-child {
   margin-right: 0px;
@@ -565,6 +566,6 @@ heder-nav:active,
 .footer-social-container {
   margin-left: 70px;
 }
-.footer-social-item:hover {
+.footer-social-link:hover {
   background-color: #2196f3;
 }
